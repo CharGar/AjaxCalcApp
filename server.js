@@ -13,7 +13,8 @@ app.get('/', function(req, res) {
 
 var x = parseFloat(req.body.x);
 var y = parseFloat(req.body.y);
-var oppp = req.body.type;
+var operator = req.body.type;
+var answer;
  app.post('/calc', function(req,res){
    console.log('in calc post route');
    res.send(200);
@@ -24,17 +25,18 @@ function calculate(){
     answer = x + y;
     break;
   case '-':
-    toReturn = Number(dig[0]) - Number(dig[1]);
+    answer = x - y;
     break;
   case '/':
-    toReturn = Number(dig[0]) / Number(dig[1]);
+    answer = x / y;
     break;
   case 'x':
-    toReturn = Number(dig[0]) * Number(dig[1]);
+    answer = x * y;
 }
+return answer
 }
 
- })
+ });
 var server = app.listen(3000, function(){
   console.log('server listening for requests on port:', server.address().port);
   console.log('press control+c to quit');
