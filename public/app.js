@@ -31,24 +31,6 @@ $('.dig').on('click', function(){
 });
 
 
-function calculate(){
-  switch(operator){
-  case '+':
-    toReturn = Number(dig[0]) + Number(dig[1]);
-    break;
-  case '-':
-    toReturn = Number(dig[0]) - Number(dig[1]);
-    break;
-  case '/':
-    toReturn = Number(dig[0]) / Number(dig[1]);
-    break;
-  case 'x':
-    toReturn = Number(dig[0]) * Number(dig[1]);
-}
-  deleted();
-  $('#result').append($(this).text());
-}
-
 function firstButton(){
 $('p').hide()
 $('#result').append($(this).val());
