@@ -1,0 +1,60 @@
+h1{
+  padding-bottom:80px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+#operators{
+  text-align: center;
+}
+
+.rows{
+  text-align: center;
+}
+
+.inputOne, .inputTwo{
+  height:40px;
+  border-radius: 10px 10px 10px 10px;
+  width:145px;
+  margin-bottom: 5px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.buttonContainer{
+  border-radius: 10px 10px 10px 10px;
+  padding-top: 20px;
+  margin-top: 20px;
+  margin-left: 34%;
+  text-align: center;
+  width:350px;
+  height:400px;
+  background-color: black;
+}
+
+#result{
+  border-radius: 5px 5px 5px 5px;
+  padding-top: 5px;
+  margin-bottom: 5px;
+  display:inline-block;
+  width:290px;
+  height:40px;
+  text-align: center;
+  background-color: silver;
+}
+
+button{
+  margin-bottom: 5px !important;
+  padding-top: 5px;
+  margin-right: 5px;
+  width:70px;
+  height:40px;
+}
+
+#equals{
+  width:145px;
+}
+
+#delete{
+  width:145px;
+}
